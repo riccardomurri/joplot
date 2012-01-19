@@ -1,0 +1,9 @@
+# insert yesterday's accounting data into the database
+#
+# note:
+#   - the password is passed on the command-line, 
+#     this is definitely insecure on the CE, where 
+#     every user can execute "ps" via globus-job-run
+#   - the PERL incantation just prints yesterday's date...
+#
+15 00 * * *  root  /opt/cscs/libexec/pbsplots/pbslogs2sql.sh
